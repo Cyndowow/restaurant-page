@@ -22,9 +22,9 @@ function createParagraph(text) {
 }
 
 function loadHome() {
-    const content = document.getElementById("content");
-    content.textContent = "";
-    content.appendChild(createHome());
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createHome());
 }
 
 export default loadHome;

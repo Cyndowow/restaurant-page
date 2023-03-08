@@ -23,9 +23,9 @@ function createContact() {
 }
 
 function loadContact() {
-    const content = document.getElementById("content");
-    content.textContent = "";
-    content.appendChild(createContact());
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createContact());
 }
 
 export default loadContact;

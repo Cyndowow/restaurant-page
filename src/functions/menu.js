@@ -28,8 +28,9 @@ function createMenu() {
             "Sauces",
             "Tomato Sauce"
         )
-    )
+    );
 
+    return menu;
 }
 
 function createMenuItem(name, description) {
@@ -49,7 +50,9 @@ function createMenuItem(name, description) {
 } 
 
 function loadMenu() {
-    const content = document.getElementById("content");
-    content.textContent = "";
-    content.appendChild(createMenu());
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createMenu());
 }
+
+export default loadMenu;

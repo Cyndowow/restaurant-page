@@ -1,5 +1,5 @@
-import loadHome from "./functions/home";
+import initializeWebsite from "./functions/website";
 
-loadHome();
+initializeWebsite();;
 
 console.log("works");
