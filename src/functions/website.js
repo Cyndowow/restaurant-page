@@ -72,16 +72,31 @@ function createMain() {
     main.classList.add("main");
     main.setAttribute("id", "main");
     return main;
-  }
+}
+
+function createFooter() {
+    const footer = document.createElement("footer");
+    footer.classList.add("footer");
+
+    const copyright = document.createElement("p");
+    copyright.textContent = `Copyright © ${new Date().getFullYear()} Me`;
+
+    footer.appendChild(copyright);
+
+    return footer;
+}
 
 function initializeWebsite() {
     const content = document.getElementById("content");
   
     content.appendChild(createHeader());
     content.appendChild(createMain());
+    content.append(createFooter());
 
     setActiveButton(document.querySelector(".nav-button"));
     loadHome();
 }
+
+
 
 export default initializeWebsite;
